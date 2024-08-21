@@ -47,6 +47,10 @@
             border: 1px solid #e7dddd;
             box-shadow: 0 0 10px 0 #ffffff inset, 0 0 20px 2px #e2dfdf;
         }
+        &__btn:active{
+            background-color: #777E90;
+            color: #e2dfdf;
+        }
         &__notification{
             cursor: pointer;
         }
