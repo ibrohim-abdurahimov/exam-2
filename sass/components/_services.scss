@@ -1,0 +1,106 @@
+.services{
+    margin-top: 130px;
+    padding-bottom: 136px;
+    &__subtitle{
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        font-family: Poppins;
+        color: #777E90;
+    }
+    &__title{
+        text-align: center;
+        margin-top: 8px;
+        font-size: 48px;
+        font-weight: 700;
+        font-family: DMSans;
+        color: #23262F;
+    }
+    &__btn{
+        display: block;
+        margin: 48px auto;
+        background-color: #3B71FE;
+        color: #FCFCFD;
+        font-family: DMSans;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 16px 24px;
+        border-radius: 90px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    &__btn:hover{
+        background-color: #FCFCFD;
+        color: #3B71FE;
+        border: 1px solid #e7dddd;
+        box-shadow: 0 0 10px 0 #2724f7 inset, 0 0 20px 2px #4f12f5;
+    }
+    &__btn:active{
+        background-color: #3B71FE;
+        color: #FCFCFD;
+
+    }
+    &__wrapper{
+        margin-top: 98px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 24px;
+    }
+    &__card{
+        background-color: #F4F5F6;
+        padding: 64px 32px;
+        border-radius: 20px;
+        &_title{
+            margin-top: 32px;
+            font-family: Poppins;
+            font-weight: 700;
+            color: #23262F;
+        }
+        &_desc{
+            margin-top: 16px;
+            font-size: 14px;
+            font-family: Poppins;
+            color: #777E90;
+            line-height: 24px;
+        }
+    }
+}
+@media (max-width:990px) {
+    .services{
+        &__wrapper{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    
+}
+@media (max-width:650px) {
+    .services{
+        &__title{
+            font-size: 40px;
+        }
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+    }
+    
+}
+@media (max-width:450px) {
+    .services{
+        &__title{
+            font-size: 35px;
+        }
+        &__btn{
+            font-size: 14px;
+        }
+    }
+    
+}
+@media (max-width:320px) {
+    .services{
+        &__title{
+            font-size: 30px;
+        }
+    }
+    
+}
