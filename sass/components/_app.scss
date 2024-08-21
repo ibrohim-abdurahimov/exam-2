@@ -1,0 +1,114 @@
+.app{
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+    &__text,
+    &__img{
+        width: calc(50% - 16px);
+    }
+    &__subtitle{
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 700;
+        color: #777E90;
+    }
+    &__title{
+        margin-top: 16px;
+        font-family: DMSans;
+        font-size: 48px;
+        font-weight: 700;
+        color: #23262F;
+    }
+    &__desc{
+        margin-top: 32px;
+        font-family: Poppins;
+        color: #777E90;
+    }
+    &__input{
+        max-width: 300px;
+        width: 100%;
+        margin-top: 40px;
+        padding: 14px 8px 14px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        border: 2px solid #E6E8EC;
+        border-radius: 90px;
+        input{
+            width: 100%;            
+            font-size: 14px;
+            border: none;
+            outline: none;
+            font-family: Poppins;
+            color: #777E90;
+            
+        }
+        &_img{
+            border: none;
+            background-color: #3B71FE;
+            padding: 4px 4px 1px 5px;
+            border-radius: 50px;
+        }
+       
+    }
+    &__img_second{
+        display: none;
+    }
+    
+}
+@media (max-width:900px) {
+    .app{
+        &__title{
+            font-size: 40px;
+        }
+    }
+    
+}
+@media (max-width:760px) {
+    .app{
+        &__text,
+        &__img{
+            width: 100%;
+        }
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__subtitle{
+            text-align: center;
+        }
+        &__title{
+            text-align: center;
+        }
+        &__desc{
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        &__input{
+            margin-top: 15px;
+            width: 100%;
+            margin: auto;
+        }
+        &__img_first{
+            display: none;
+        }
+        &__img_second{
+            display: block;
+        }
+    }
+    
+}
+@media (max-width:376px) {
+    .app{
+        &__title{
+            font-size: 35px;
+        }
+        &__desc{
+            font-size: 14px;
+        }
+    }
+    
+}
