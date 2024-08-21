@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Regular.woff);
+}
+@font-face {
+    font-family: DMSans;
+    src: url(../fonts/DMSans-VariableFont_opsz\,wght.woff);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1152px;
+    width: 100%;
+    margin: auto;
+    padding: 0 16px;
+}
+li{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+img{
+    max-width: 100%;
+}
