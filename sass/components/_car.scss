@@ -1,0 +1,214 @@
+.car{
+    position: relative;
+    .container{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    &__wrapper{
+     
+        background-color: #FCFCFD;
+        box-shadow: 0px 40px 64px -32px #0F0F0F1A;
+        padding: 40px;
+        border-radius: 24px;
+    }
+    &__collection{
+        display: flex;
+        gap: 48px;
+        border-bottom: 1px solid #E6E8EC;
+    }
+    &__item{
+        font-family: DMSans;
+        font-weight: 700;
+        color: #777E90;
+        padding-bottom: 30px;
+        border: 1px solid transparent;
+        transform: .1s;
+    }
+    &__item:hover{
+        border-bottom: 1px solid #23262F;
+        color: #23262F;
+    }
+    &__btn{
+        margin-top: 32px;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        button{
+            border-radius: 90px;
+            border: 2px solid #E6E8EC;
+            padding: 12px 16px;
+            background-color: #fff;
+            font-family: DMSans;
+            font-weight: 700;
+            color: #23262F;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #23262F;
+            color: #FCFCFD;
+        }
+        button:active{
+            background-color: #FCFCFD;
+            color: #23262F;
+        }
+    }
+    &__info{
+        margin-top: 12px;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__card{
+        padding: 20px;
+        display: flex;
+        gap: 24px;
+        align-items: start;
+    }
+    &__text{
+        flex: 1;
+    }
+    &__title{
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 600;
+        color: #23262F;
+    }
+    &__title.subtitle{
+        display: none;
+    }
+    &__desc{
+        font-family: Poppins;
+        color: #777E90;
+    }
+
+}
+@media (max-width:1205px) {
+    .car{
+        .container{
+            max-width: 1000px;
+            width: 100%;
+        }
+    }
+    
+}
+@media (max-width:1054px) {
+    .car{
+        .container{
+            max-width: 919px;
+            width: 100%;
+        }
+        &__title{
+            font-size: 20px;
+        }
+    }
+    
+}
+
+@media (max-width:990px) {
+    .car{
+        .container{ 
+            max-width: 850px;
+            width: 100%;
+        }
+        &__info{
+            display: flex;
+        }
+        &__card.first{
+            flex: 1;
+        }
+        &__card.second{
+            display: none;
+        }
+    }
+    
+}
+@media (max-width:880px) {
+    .car{
+        .container{
+            top: 100px;
+            max-width: 750px;
+            width: 100%;
+        }
+    }
+    
+}
+@media (max-width:806px) {
+    .car{
+        .container{
+            max-width: 650px;
+        }
+    }
+    
+}
+@media (max-width:680px) {
+    .car{
+        .container{
+            max-width: 550px;
+        }
+        &__wrapper{
+            padding: 20px;  
+        }
+        &__item{
+            font-size: 14px;
+            font-weight: 500;
+        }
+        &__btn{
+            display: none;
+        }
+        &__title{
+            display: none;
+        }
+        &__title.subtitle{
+            display: block;
+        }
+        &__card_logo{
+            display: none;
+        }
+        &__desc{
+            display: none;
+        }
+        &__desc.text{
+            display: block;
+        }
+    }
+    
+}
+@media (max-width:617px) {
+    .car{
+        .container{
+            top: -50px;
+        }
+    }
+    
+}
+@media (max-width:455px) {
+    .car{
+        .container{
+            top: -150px;
+        }
+        &__collection{
+            gap: 30px;
+            font-size: 12px;
+        }
+        &__item{
+            font-size: 12px
+        }
+        &__title{
+            font-size: 25px;
+        }
+        &__desc{
+            font-size: 12px;
+        }
+        &__text{
+            flex: auto;
+        }
+        &__img{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
+}
