@@ -84,13 +84,13 @@
         background-color: #fff;
     }
     &__btn:hover{
-        background-color: #E6E8EC;
+        background-color: #fefeff;
         border: 1px solid #e7dddd;
-        box-shadow: 0 0 10px 0 #616060 inset, 0 0 20px 2px #e2dfdf;
+        box-shadow: 0 0 10px 0 #0059ff inset, 0 0 20px 2px #003feb54;
     }
     &__btn:active{
-        background-color: #616060;
-        color: #fff;
+        background-color: #fff8f8;
+        color: #807a7a;
     }
 
 }

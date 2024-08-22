@@ -43,13 +43,12 @@
             
         }
         &__btn:hover{
-            background-color: #E6E8EC;
-            border: 1px solid #e7dddd;
-            box-shadow: 0 0 10px 0 #ffffff inset, 0 0 20px 2px #e2dfdf;
+            border: 1px solid #fff;
+            box-shadow: 0 0 10px 0 #4b4eeb inset, 0 0 20px 2px #3345ec4b;
         }
         &__btn:active{
-            background-color: #777E90;
-            color: #e2dfdf;
+            background-color: #f1f1f1;
+            color: #fff;
         }
         &__notification{
             cursor: pointer;
