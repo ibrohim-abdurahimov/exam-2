@@ -79,3 +79,22 @@
         box-shadow: 0 0 10px 0 #a5a4a4 inset, 0 0 20px 2px #e2dfdf;
     }
 }
+@media (max-width:600px) {
+    .category{
+        &__title{
+            font-size: 40px;
+        }
+    }
+    
+}
+@media (max-width:450px) {
+    .category{
+        &__title{
+            font-size: 30px;
+        }
+        &__desc{
+            font-size: 16px;
+        }
+    }
+    
+}
